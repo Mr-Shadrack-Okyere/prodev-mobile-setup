@@ -1,16 +1,19 @@
-import { View, Text, StyleSheet } from "react-native";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
-export default function HomeScreen() {
+export default function App() {
   return (
     <View style={styles.container}>
+      {/* Main Entry Text */}
       <Text>Entry Screen - Awesome</Text>
 
+      {/* Additional Text Components */}
       <View>
         <Text style={styles.largeText}>
-          TYPESCRIPT IS GREAT IF YOU PRACTICE MORE
+          Typescript is great if you practice more
         </Text>
         <Text style={styles.mediumText}>
-          React Native provides you single code base for cross platforms
+          React Native provides you a single codebase for cross platforms
         </Text>
         <Text style={styles.smallText}>ALX is awesome</Text>
       </View>
@@ -18,11 +21,13 @@ export default function HomeScreen() {
   );
 }
 
+// Styles Definition
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#90caf9",
-    padding: 10,
+    padding: 20,
+    justifyContent: "center",
   },
   largeText: {
     fontSize: 30,
