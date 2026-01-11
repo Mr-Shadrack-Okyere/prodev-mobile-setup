@@ -1,6 +1,28 @@
+import { View, Text, StyleSheet } from "react-native";
+
+export default function HomeScreen() {
+  return (
+    <View style={styles.container}>
+      <Text>Entry Screen - Awesome</Text>
+
+      <View>
+        <Text style={styles.largeText}>
+          TYPESCRIPT IS GREAT IF YOU PRACTICE MORE
+        </Text>
+        <Text style={styles.mediumText}>
+          React Native provides you single code base for cross platforms
+        </Text>
+        <Text style={styles.smallText}>ALX is awesome</Text>
+      </View>
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: "#90caf9",
+    padding: 10,
   },
   largeText: {
     fontSize: 30,
