@@ -21,6 +21,7 @@ export default function App() {
   );
 }
 
+
 // Styles Definition
 const styles = StyleSheet.create({
   container: {
